@@ -64,6 +64,12 @@ public class ContactServiceImpl implements ContactService{
 	}
 	
 	
+	@Override
+	public long countContacts() {
+	    return contactRepository.count();
+	}
+	
+	
 	 private ContactDTO mapToDTO(ContactEntity entity) {
 	        ContactDTO dto = new ContactDTO();
 	        dto.setName(entity.getName());

@@ -15,5 +15,7 @@ public interface ContactService {
 	ContactDTO get(Long id);
 
 	List<ContactDTO> getAll();
+	
+	long countContacts();
 
 }
