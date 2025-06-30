@@ -1,0 +1,65 @@
+# Java build files
+/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+logs/
+*.tmp
+
+# Maven
+.mvn/
+!**/src/main/resources/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+
+# Eclipse
+.project
+.classpath
+.settings/
+.apt_generated/
+.factorypath
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# H2 DB
+*.h2.db
+*.mv.db
+
+# Test reports
+/test-output/
+
+# Coverage
+coverage/
+*.exec
+jacoco.exec
+
+# Logs from Spring Boot
+spring.log
+
+# Node/Frontend (if any frontend is added later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Others
+*.bak
+*.swp
+

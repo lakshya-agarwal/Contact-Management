@@ -61,7 +61,6 @@ public class SecurityConfig {
 		return username -> {
 			UserEntity user = userRepository.findByUsername(username)
 					.orElseThrow(() -> new UsernameNotFoundException("User not found: " + username));
-			System.out.println("DB Password for " + user.getUsername() + ": " + user.getPassword());
 			return User.withUsername(user.getUsername()).password(user.getPassword())
 					.roles(user.getRole().replace("ROLE_", "")) // remove prefix
 					.build();

@@ -91,6 +91,7 @@ public class ContactServiceImpl implements ContactService {
 
     private ContactDTO mapToDTO(ContactEntity entity) {
         ContactDTO dto = new ContactDTO();
+        dto.setId(entity.getId());
         dto.setName(entity.getName());
         dto.setEmail(entity.getEmail());
         dto.setAddress(entity.getAddress());

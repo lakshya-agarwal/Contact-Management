@@ -8,6 +8,8 @@ import lombok.Data;
 
 @Data
 public class ContactDTO {
+	
+	private long id;
 
 	@NotBlank
 	private String name;
