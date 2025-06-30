@@ -41,5 +41,8 @@ public class ContactEntity {
     private String phone;
     
     
+    @Column(nullable = false)
+    private String username; // Owner of this contact
+    
 
 }
